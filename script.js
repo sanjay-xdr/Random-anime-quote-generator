@@ -8,14 +8,26 @@ fetch('https://animechan.vercel.app/api/random')
     var quoteTag=document.createTextNode("Aniime Name is: "+ quote.anime);
     spanTag.appendChild(quoteTag);
 
+    var br = document.createElement("br");
+spanTag.appendChild(br);
+
     var spanTagChar=document.createElement("span");
     var quoteTagChar=document.createTextNode("Spoken by Character: "+quote.character);
-    spanTag.appendChild(quoteTagChar);
+    spanTagChar.appendChild(quoteTagChar);
+
+  
+    var br = document.createElement("br");
+spanTagChar.appendChild(br);
+
 
 
     var spanTagQuote=document.createElement("span");
     var quoteTagQuote=document.createTextNode("Quote: "+quote.quote);
-    spanTag.appendChild(quoteTagQuote);
+    spanTagQuote.appendChild(quoteTagQuote);
+
+    var br = document.createElement("br");
+    spanTagQuote.appendChild(br);
+    
 
     div.appendChild(spanTag);
     div.appendChild(spanTagChar);
