@@ -1,3 +1,10 @@
+function generateRandomquote(){
+
+    
+    var clear=document.getElementById("center");
+    
+
+    clear.innerText=""; 
 fetch('https://animechan.vercel.app/api/random')
 .then(response => response.json())
 .then(quote => {
@@ -33,19 +40,44 @@ spanTagChar.appendChild(br);
     div.appendChild(spanTagChar);
     div.appendChild(spanTagQuote);
 
+    
+
 
     // console.log("Anime name is " + quote.anime);
     // console.log("From Character "+quote.character);
     // console.log("Quote "+quote.quote);
+})};
+
+const url="https://animechan.vercel.app/api/quotes/character?name=";
+
+
+function searchQuote(){
+    var clear=document.getElementById("center1");
+    
+
+    clear.innerText=""; 
+    var userName=document.querySelector("#input").value;
+    var div=document.querySelector("#center1");
+    var result=url.concat(userName);
+    fetch(result)
+.then(response => response.json())
+.then(quote => {
+    quote.forEach(element => {
+
+        var spanTag=document.createElement("span");
+        var quoteTag=document.createTextNode("Quote: "+ element.quote);
+        spanTag.appendChild(quoteTag);
+        var br = document.createElement("br");
+        spanTag.appendChild(br);
+        var br = document.createElement("br");
+        spanTag.appendChild(br);
+        div.appendChild(spanTag);
+    
+       
+      
+    
+        
+    });
+
 }
-
-
-
-
-
-
-
-
-)
-
-
+)};
