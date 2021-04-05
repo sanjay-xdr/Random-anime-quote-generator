@@ -2,7 +2,7 @@ fetch('https://animechan.vercel.app/api/random')
 .then(response => response.json())
 .then(quote => {
 
-    var div=document.q("#center")
+    var div=document.querySelector("#center")
 
     var spanTag=document.createElement("span");
     var quoteTag=document.createTextNode(quote.anime);
