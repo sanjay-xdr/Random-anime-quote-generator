@@ -1,5 +1,8 @@
 function generateRandomquote(){
+    var clear=document.getElementById("center1");
+    
 
+    clear.innerText=""; 
     
     var clear=document.getElementById("center");
     
@@ -52,6 +55,10 @@ const url="https://animechan.vercel.app/api/quotes/character?name=";
 
 
 function searchQuote(){
+    var clear=document.getElementById("center");
+    
+
+    clear.innerText=""; 
     var clear=document.getElementById("center1");
     
 

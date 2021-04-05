@@ -1,18 +1,71 @@
 body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     background-image: url(./src/39033.png);
+ 
+    height: 1100px;
     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    background-color: #FEF2F2;
+    width: 25%;
 }
 #center{
-    background-color: #F3F4F6;
-    align-items: center;
+    margin-top:4rem;
+    margin-left: 50px;
+    
+    width: auto;
+    background-color: #FEF2F2;
+    
 }
 
 #random-generator{
     margin-top: 2rem;
-    float: right;
+    margin-left: 2rem;
+   
+}
+
+/* #middle-text{
+    font-size: 25px;
+
+    border-radius: 25%;
+    margin-left: 1.5rem;
+    background-color: aqua;
+} */
+
+button{
+    background-color: #F87171;
+    border-radius: 10px;
+    width: auto;
+    color: black;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: #F87171;
+    border-radius: 10px;
+    color: #FEF2F2;
+    font-size: 25px;
+    cursor: pointer;
+}
+#input{
+    margin-top: 1rem;
+    width: 30%;
+    height: 3rem;
+
 }
 
 #center1{
-    background-color: #F3F4F6;
+    margin-top:4rem;
+    margin-left: 50px;
+   
+    width: auto;
+    background-color: #FEF2F2;
+
   
 }
